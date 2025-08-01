@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
-<title>学習指導要領クイズ</title></head><body>
+<title>次期学習指導要領クイズ</title></head><body>
 <script type="module">
 import { startQuiz } from "https://code4fukui.github.io/q4js/q4.js";
 import { shuffle } from "https://js.sabae.cc/shuffle.js";
@@ -11,7 +11,7 @@ const quiz = quiz0.map(i => {
 shuffle(quiz);
 
 const point = await startQuiz({
-  title: "学習指導要領クイズ",
+  title: "次期学習指導要領クイズ",
   quiz,
 });
 console.log("正答数: " + point);
