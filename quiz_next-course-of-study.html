@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>学習指導要領クイズ</title></head><body>
+<script type="module">
+import { startQuiz } from "https://code4fukui.github.io/q4js/q4.js";
+import { shuffle } from "https://js.sabae.cc/shuffle.js";
+
+const quiz0 = await (await fetch("./quiz_next-course-of-study.json")).json();
+const quiz = quiz0.map(i => {
+  return [i.question, ...i.choices.map(j => j.text)];
+});
+shuffle(quiz);
+
+const point = await startQuiz({
+  title: "学習指導要領クイズ",
+  quiz,
+});
+console.log("正答数: " + point);
+</script>
+</body></html>

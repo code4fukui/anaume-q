@@ -53,7 +53,7 @@ const getPrompt = (body) => {
 
 export const fetchQ = async (text) => {
   const prompt = getPrompt(text);
-  return await fetchChat(prompt, "json");
+  return JSON.parse(await fetchChat(prompt, "json"));
 };
 
 if (import.meta.main) {
