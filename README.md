@@ -22,4 +22,4 @@ deno run -A https://code4fukui.github.io/anaume-q/fetchQ.js "The educational pla
 - [openai.js](https://github.com/code4fukui/ai_chat/blob/main/openai.js) from [ai_chat](https://github.com/code4fukui/ai_chat/)
 
 ## License
-MIT License
+MIT License — see [LICENSE](LICENSE).
