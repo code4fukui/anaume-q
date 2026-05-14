@@ -1,3 +1,8 @@
 .env
 log/
 temp/
+
+# meta-ops cleanup
+.DS_Store
+Thumbs.db
+node_modules/
